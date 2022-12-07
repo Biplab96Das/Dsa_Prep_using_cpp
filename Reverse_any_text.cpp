@@ -7,7 +7,7 @@ void rev(string &s)
 }
 int main()
 {   string s;
-    cout<<"Enter the text to to reversed"<<endl;
+    cout<<"Enter the text to be reversed"<<endl;
     getline(cin,s);
     rev(s);
     cout<<s<<endl;
