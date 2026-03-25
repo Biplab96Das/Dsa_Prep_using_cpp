@@ -33,3 +33,9 @@ public:
 
     }
 };
+/* We traverse left to right in a row and row by row in top-down to get total sum of all elements in grid, i.e. s
+Next see if s is odd we can not partition it into two half, in that case return fasle;
+Next taking rows sum(1st row, 1st+2nd rows, 1st+2nd+3rd rows, etc)and see if it is  half of s, if we get half of s that means it the the correct partition. Return true.
+Same thing we do for column, from left to right see group of columns is half of s or not, if it is half we get our partition. Return true.
+Lastly we see such row wise or column wise partition not present so return false.
+*/
